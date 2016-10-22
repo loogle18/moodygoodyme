@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Moodygoodyme</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+  </head>
+
+  <body data-controller='<%=controller_name%>' data-action='<%=action_name%>'>
+    <%= yield %>
+  </body>
+  <%= javascript_include_tag 'application' %>
+  <%= yield(:js) if content_for?(:js) %>
+</html>
