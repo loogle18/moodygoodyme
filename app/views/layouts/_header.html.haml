@@ -1,6 +1,7 @@
-%nav.main-navbar.navbar.navbar-default
+%nav.main-navbar.navbar.navbar-default{ class: nav_black_or_white_class }
   .navbar-header
-    = link_to 'MoodyGoodyMe', root_path, class: 'navbar-brand'
+    = link_to root_path, class: 'navbar-brand' do
+      = inline_svg 'icons/svg/icon-2.svg'
     = link_to 'javascript:void(0);', 'aria-expanded' => 'false', 'data-target' => '#main-nav-list',
       'data-toggle' => 'collapse', class: 'pull-right navbar-toggle header-toggler' do
       %span.sr-only Toggle navigation
@@ -11,8 +12,7 @@
     .navbar-right.-no-margin
       %ul.nav.navbar-nav
         %li.nav-item
-          = link_to 'WORK', root_path, class: 'link'
         %li.nav-item
-          = link_to 'HOBBY', root_path, class: 'link'
+          = link_to 'MY SHIT', root_path, class: 'link inline-block'
         %li.nav-item
-          = link_to 'ABOUT', root_path, class: 'link'
+          = link_to 'CONTACTS', contacts_path, class: 'link inline-block'

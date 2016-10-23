@@ -10,6 +10,10 @@
   width: 100%;
   z-index: 1;
 
+  .navbar-brand {
+    color: $white-color;
+  }
+
   .header-toggler {
     background: 0;
     border: 0;
@@ -26,12 +30,79 @@
     }
   }
 
+  .nav-item .link {
+    outline: none;
+    position: relative;
+  }
+
+  .nav-item .link::before {
+    border-radius: 1px;
+    content: '';
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    top: calc(50% - 1px);
+    transition: width cubic-bezier(0, 0, 0.2, 1) 0.3s;
+    width: 0;
+  }
+
+  .nav-item .link:focus,
+  .nav-item .link:hover,
+  .nav-item .link:focus:hover {
+
+    &::before {
+      width: calc(100% - 30px);
+    }
+  }
+
   .main-nav-list {
     box-shadow: none;
-    transition: height ease-out 0.3s;
+    transition: height cubic-bezier(0, 0, 0.2, 1) 0.3s;
 
     .navbar-nav {
       margin: 0 -15px;
+    }
+  }
+
+  &.-black {
+
+    .icon-bar {
+      background-color: $white-color;
+    }
+
+    .nav-item .link {
+      color: $primary-black;
+    }
+
+    .nav-item .link::before {
+      background-color: $primary-black;
+    }
+
+    .nav-item .link:focus,
+    .nav-item .link:hover,
+    .nav-item .link:focus:hover {
+      color: $primary-black;
+    }
+  }
+
+  &.-white {
+
+    .icon-bar {
+      background-color: $primary-black;
+    }
+
+    .nav-item .link {
+      color: $white-color;
+    }
+
+    .nav-item .link::before {
+      background-color: $white-color;
+    }
+
+    .nav-item .link:focus,
+    .nav-item .link:hover,
+    .nav-item .link:focus:hover {
+      color: $white-color;
     }
   }
 }
@@ -39,9 +110,44 @@
 // For small and extra small screens
 @media (max-width: $screen-sm - 1) {
 
-  .main-navbar {
+  .main-navbar.-black {
 
     .main-nav-list.in {
+      background-color: $primary-black;
+    }
+
+    .nav-item .link {
+      color: $white-color;
+    }
+
+    .nav-item .link:focus,
+    .nav-item .link:hover,
+    .nav-item .link:focus:hover {
+      color: $white-color;
+    }
+
+    .nav-item .link::before {
+      background-color: $white-color;
+    }
+  }
+
+  .main-navbar.-white {
+
+    .main-nav-list.in {
+      background-color: $white-color;
+    }
+
+    .nav-item .link {
+      color: $primary-black;
+    }
+
+    .nav-item .link:focus,
+    .nav-item .link:hover,
+    .nav-item .link:focus:hover {
+      color: $primary-black;
+    }
+
+    .nav-item .link::before {
       background-color: $primary-black;
     }
   }

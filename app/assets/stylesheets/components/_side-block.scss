@@ -1,0 +1,16 @@
+.side-block {
+  height: 100%;
+
+  &.-dark {
+    background-color: $primary-black;
+  }
+}
+
+
+// For small and extra small screens
+@media (max-width: $screen-sm - 1) {
+
+  .side-block {
+    height: 50%
+  }
+}
