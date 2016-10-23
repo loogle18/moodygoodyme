@@ -1,0 +1,10 @@
+!!!
+%html
+  %head
+    %title Moodygoodyme
+    = csrf_meta_tags
+    = stylesheet_link_tag 'application', media: 'all'
+  %body{ data: body_data_attributes }
+    = yield
+  = javascript_include_tag 'application'
+  = yield(:js) if content_for?(:js)

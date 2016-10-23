@@ -93,6 +93,8 @@ GEM
     ffi (1.9.14)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
+    haml (4.0.7)
+      tilt
     i18n (0.7.0)
     inline_svg (0.11.0)
       activesupport (>= 4.0)
@@ -254,6 +256,7 @@ DEPENDENCIES
   connection_pool
   dalli
   devise
+  haml
   heroku-deflater!
   inline_svg
   jquery-rails

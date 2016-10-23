@@ -33,6 +33,9 @@ gem 'mini_magick'
 # Authentication & Authorization
 gem 'devise'
 
+# View
+gem 'haml'
+
 group :production, :staging do
   # Caching
   gem 'rack-cache'

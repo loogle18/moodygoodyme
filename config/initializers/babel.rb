@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 Rails.application.config.assets.configure do |env|
   es6amd = Sprockets::ES6.new(
     'modules'   => 'amd',
