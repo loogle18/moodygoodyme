@@ -1,0 +1,48 @@
+.main-navbar {
+  background: 0;
+  border-radius: 0;
+  border: 0;
+  left: 0;
+  margin: 0;
+  padding: 15px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+
+  .header-toggler {
+    background: 0;
+    border: 0;
+    margin-right: 0;
+    transition: transform ease-out 0.3s;
+
+    &:focus,
+    &:hover {
+      background: 0;
+    }
+
+    &[aria-expanded='true'] {
+      transform: rotate(90deg);
+    }
+  }
+
+  .main-nav-list {
+    box-shadow: none;
+    transition: height ease-out 0.3s;
+
+    .navbar-nav {
+      margin: 0 -15px;
+    }
+  }
+}
+
+// For small and extra small screens
+@media (max-width: $screen-sm - 1) {
+
+  .main-navbar {
+
+    .main-nav-list.in {
+      background-color: $primary-black;
+    }
+  }
+}

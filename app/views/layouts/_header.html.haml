@@ -1,0 +1,18 @@
+%nav.main-navbar.navbar.navbar-default
+  .navbar-header
+    = link_to 'MoodyGoodyMe', root_path, class: 'navbar-brand'
+    = link_to 'javascript:void(0);', 'aria-expanded' => 'false', 'data-target' => '#main-nav-list',
+      'data-toggle' => 'collapse', class: 'pull-right navbar-toggle header-toggler' do
+      %span.sr-only Toggle navigation
+      %span.icon-bar
+      %span.icon-bar
+      %span.icon-bar
+  #main-nav-list.main-nav-list.navbar-collapse.collapse.-no-border{ 'aria-expanded' => 'false' }
+    .navbar-right.-no-margin
+      %ul.nav.navbar-nav
+        %li.nav-item
+          = link_to 'WORK', root_path, class: 'link'
+        %li.nav-item
+          = link_to 'HOBBY', root_path, class: 'link'
+        %li.nav-item
+          = link_to 'ABOUT', root_path, class: 'link'

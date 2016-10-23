@@ -1,0 +1,28 @@
+@each $side in ('left', 'right', 'bottom', 'top') {
+
+  .-no-margin-#{$side} {
+    margin-#{$side}: 0 !important;
+  }
+
+  .-no-padding-#{$side} {
+    padding-#{$side}: 0 !important;
+  }
+
+  .-no-border-#{$side} {
+    border-#{$side}: 0 !important;
+  }
+}
+
+@each $property in ('margin', 'padding', 'border') {
+  .-no-#{$property} {
+    #{$property}: 0 !important;
+  }
+}
+
+.full-height {
+  height: 100%;
+}
+
+.inline-block {
+  display: inline-block;
+}

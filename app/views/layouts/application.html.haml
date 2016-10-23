@@ -3,8 +3,11 @@
   %head
     %title Moodygoodyme
     = csrf_meta_tags
+    %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1' }
     = stylesheet_link_tag 'application', media: 'all'
   %body{ data: body_data_attributes }
-    = yield
+    = render partial: 'layouts/header'
+    .main-content{ class: main_content_classes }
+      = yield
   = javascript_include_tag 'application'
   = yield(:js) if content_for?(:js)

@@ -1,0 +1,23 @@
+.home-show {
+  border: 15px solid $primary-grey;
+  height: 100%;
+
+  .side-wrapper.-left {
+    background-color: $primary-black;
+  }
+
+  .side-wrapper.-right {
+
+  }
+}
+
+// For small and extra small screens
+@media (max-width: $screen-sm - 1) {
+
+  .home-show {
+
+    .side-wrapper {
+      height: 50%
+    }
+  }
+}

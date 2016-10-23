@@ -6,4 +6,8 @@ module ApplicationHelper
       'action' => action_name
     }
   end
+
+  def main_content_classes
+    [controller_name, '-', action_name].join
+  end
 end
