@@ -1,3 +1,46 @@
 .contacts-index {
   height: 100%;
+
+  .list-of-contacts {
+    @extend %vertical-alignment-rule;
+
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+
+    .link-wrapper {
+      padding: 0 5px;
+    }
+
+    .link {
+      color: $primary-grey;
+      font-size: $default-content-font-size + 6;
+      padding: 10px 0;
+      position: relative;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .link::before {
+      @extend %custom-line-throw-rule;
+      background-color: $primary-grey;
+    }
+
+    .link:focus::before,
+    .link:hover::before,
+    .link:focus:hover::before {
+      width: 100%;
+    }
+  }
+}
+
+// For small and extra small screens
+@media (max-width: $screen-sm - 1) {
+
+  .contacts-index {
+
+    .link-wrapper {
+      display: inline-block;
+    }
+  }
 }

@@ -19,6 +19,22 @@
   }
 }
 
+%vertical-alignment-rule {
+  align-items: center;
+  display: flex;
+}
+
+%custom-line-throw-rule {
+  border-radius: 1px;
+  content: '';
+  display: inline-block;
+  height: 2px;
+  position: absolute;
+  top: calc(50% - 1px);
+  transition: width cubic-bezier(0, 0, 0.2, 1) 0.3s;
+  width: 0;
+}
+
 .full-height {
   height: 100%;
 }

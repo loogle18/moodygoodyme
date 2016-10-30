@@ -12,26 +12,18 @@ gem 'puma'
 gem 'pg'
 gem 'connection_pool'
 
+gem 'oxymoron'
+
 # Assets
 gem 'sass-rails'
 
-gem 'sprockets-es6'
+gem 'angularjs-rails'
 
 gem 'jquery-rails'
 
 gem 'uglifier'
 
 gem 'inline_svg'
-
-# Pagination
-gem 'kaminari'
-
-# File uploader
-gem 'carrierwave'
-gem 'mini_magick'
-
-# Authentication & Authorization
-gem 'devise'
 
 # View
 gem 'haml'
@@ -82,9 +74,7 @@ group :test do
 end
 
 source 'https://rails-assets.org' do
-  gem 'rails-assets-es5-shim'
   gem 'rails-assets-jquery'
   gem 'rails-assets-jquery-ujs'
   gem 'rails-assets-bootstrap-sass'
-  gem 'rails-assets-almond', '<= 0.3.1'
 end

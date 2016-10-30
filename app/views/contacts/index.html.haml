@@ -1,5 +1,15 @@
-.container-fluid.full-height
-  .row.full-height
-    .col-sm-8.side-block.-light
+= render partial: 'layouts/header'
+.main-content.contacts-index
+  .container-fluid.full-height
+    .row.full-height
+      .col-sm-8.side-block.-light
 
-    .col-sm-4.side-block.-dark
+      .col-sm-4.side-block.-dark
+        .list-of-contacts
+          .links-group
+            .link-wrapper
+              = mail_to 'sviat.minato@gmail.com', 'E-MAIL', class: 'link inline-block'
+            .link-wrapper
+              = link_to 'FACEBOOK', 'https://www.facebook.com/sviatoslav.georgievich', target: '_blank', class: 'link inline-block'
+            .link-wrapper
+              = link_to 'INSTAGRAM', 'https://www.instagram.com/loogle18/', target: '_blank', class: 'link inline-block'

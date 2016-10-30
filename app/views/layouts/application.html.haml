@@ -1,13 +1,11 @@
 !!!
-%html
+%html{ 'ng-app' => 'moodyGoodyMe' }
   %head
     %title Moodygoodyme
     = csrf_meta_tags
     %meta{ name: 'viewport', content: 'width=device-width, initial-scale=1' }
     = stylesheet_link_tag 'application', media: 'all'
-  %body{ data: body_data_attributes }
-    = render partial: 'layouts/header'
-    .main-content{ class: main_content_classes }
-      = yield
+  %body
+    %ui-view
   = javascript_include_tag 'application'
   = yield(:js) if content_for?(:js)

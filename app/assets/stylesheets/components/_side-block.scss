@@ -1,5 +1,6 @@
 .side-block {
   height: 100%;
+  padding-top: 80px;
 
   &.-dark {
     background-color: $primary-black;
@@ -10,7 +11,29 @@
 // For small and extra small screens
 @media (max-width: $screen-sm - 1) {
 
-  .side-block {
-    height: 50%
+  .home-show {
+
+    .side-block:first-of-type {
+      height: calc(100% - 120px);
+    }
+
+    .side-block:last-of-type {
+      height: 120px;
+    }
+  }
+
+  .contacts-index {
+
+    .side-block:first-of-type {
+      height: calc(100% - 60px);
+    }
+
+    .side-block:last-of-type {
+      height: 60px;
+    }
+  }
+
+  .side-block:last-of-type {
+    padding-top: initial;
   }
 }
