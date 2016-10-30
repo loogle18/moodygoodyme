@@ -177,7 +177,7 @@ angular.module("oxymoron.config.states", [])
           controller: 'ContactsCtrl as ctrl',
           resolve: {
             action: ['$stateParams', function ($stateParams) {
-              return resolve('index', $stateParams)
+              return resolve('new', $stateParams)
             }]
           }
         })

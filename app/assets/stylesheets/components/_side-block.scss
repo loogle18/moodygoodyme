@@ -11,7 +11,7 @@
 // For small and extra small screens
 @media (max-width: $screen-sm - 1) {
 
-  .home-show {
+  .home-page {
 
     .side-block:first-of-type {
       height: calc(100% - 120px);
@@ -22,7 +22,7 @@
     }
   }
 
-  .contacts-index {
+  .contacts-page {
 
     .side-block:first-of-type {
       height: calc(100% - 60px);

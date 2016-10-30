@@ -1,4 +1,4 @@
-.contacts-index {
+.contacts-page {
   height: 100%;
 
   .list-of-contacts {
@@ -37,7 +37,7 @@
 // For small and extra small screens
 @media (max-width: $screen-sm - 1) {
 
-  .contacts-index {
+  .contacts-page {
 
     .link-wrapper {
       display: inline-block;

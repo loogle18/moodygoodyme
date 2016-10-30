@@ -1,0 +1,6 @@
+= form_for @message, url: contacts_path, html: { novalidate: true } do |form|
+  .form-group
+    = form.email_field :email, placeholder: 'Email', class: 'form-control'
+  .form-group
+    = form.text_area :body, placeholder: 'Message', class: 'form-control'
+  = form.submit 'Send', class: 'btn btn-primary', 'data-disable-with' => false

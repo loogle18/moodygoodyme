@@ -2,5 +2,6 @@
 Rails.application.routes.draw do
   root to: 'home#show'
 
-  resources :contacts, only: :index
+  get 'contacts', to: 'contacts#new'
+  post 'contacts', to: 'contacts#create'
 end

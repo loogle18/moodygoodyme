@@ -23,7 +23,7 @@
     background: 0;
     border: 0;
     margin-right: 0;
-    transition: transform ease-out 0.3s;
+    transition: transform cubic-bezier(0.4, 0, 1, 1) 0.3s;
 
     &:focus,
     &:hover,
@@ -55,7 +55,7 @@
 
   .main-nav-list {
     box-shadow: none;
-    transition: height cubic-bezier(0, 0, 0.2, 1) 0.3s;
+    transition: height cubic-bezier(0.4, 0, 1, 1) 0.3s;
 
     .navbar-nav {
       margin: 0 -15px;
@@ -112,9 +112,31 @@
 // For small and extra small screens
 @media (max-width: $screen-sm - 1) {
 
+  .main-navbar {
+
+    .main-nav-list {
+      margin-left: -15px;
+      margin-right: -15px;
+      padding: 0 30px;
+    }
+
+    .main-nav-list::after {
+      @include gradient-vertical(rgba($three-seven-grey, 0.2), transparent);
+      background-repeat: repeat-x;
+      content: '';
+      height: 5px;
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: calc(100% - 15px);
+      width: 100%;
+      z-index: 1000;
+    }
+  }
+
   .main-navbar.-black {
 
-    .main-nav-list.in {
+    .main-nav-list {
       background-color: $primary-black;
     }
 
@@ -135,7 +157,7 @@
 
   .main-navbar.-white {
 
-    .main-nav-list.in {
+    .main-nav-list {
       background-color: $white-color;
     }
 
