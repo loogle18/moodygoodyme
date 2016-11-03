@@ -28,6 +28,9 @@ gem 'inline_svg'
 # View
 gem 'haml'
 
+# Email validator
+gem 'validates_email_format_of'
+
 group :production, :staging do
   # Caching
   gem 'rack-cache'

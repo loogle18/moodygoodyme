@@ -1,6 +1,8 @@
-= form_for @message, url: contacts_path, html: { novalidate: true } do |form|
-  .form-group
-    = form.email_field :email, placeholder: 'Email', class: 'form-control'
-  .form-group
-    = form.text_area :body, placeholder: 'Message', class: 'form-control'
-  = form.submit 'Send', class: 'btn btn-primary', 'data-disable-with' => false
+= form_for @message, url: contacts_path,
+  html: { class: 'form clearfix', autocomplete: 'off', novalidate: true } do |form|
+  .form-group.-no-margin-bottom
+    = form.email_field :email, placeholder: 'Email is required', autocomplete: 'off',
+    class: 'form-control -input'
+  .form-group.-textarea
+    = form.text_area :body, placeholder: 'Body is required', class: 'form-control -textarea'
+  = form.submit 'Send', class: 'link -submit pull-right', 'data-disable-with' => false

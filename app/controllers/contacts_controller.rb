@@ -15,9 +15,9 @@ class ContactsController < ApplicationController
 
     if @message.save
       MessageMailer.new_message(@message).deliver
-      render json: { msg: 'I will reply you as soon as possible!', redirect_to: 'root_path'}
+      render json: { msg: 'Thank you! I will reply as soon as possible!', redirect_to: 'root_path'}
     else
-      render json: { msg: @message.errors.full_messages.join(', ') }, status: 401
+      render json: { msg: @message.errors.full_messages.join('. ') }, status: 401
     end
   end
 

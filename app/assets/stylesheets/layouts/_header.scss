@@ -113,6 +113,7 @@
 @media (max-width: $screen-sm - 1) {
 
   .main-navbar {
+    overflow: hidden;
 
     .main-nav-list {
       margin-left: -15px;
@@ -120,7 +121,7 @@
       padding: 0 30px;
     }
 
-    .main-nav-list::after {
+    .main-nav-list.in::after {
       @include gradient-vertical(rgba($three-seven-grey, 0.2), transparent);
       background-repeat: repeat-x;
       content: '';
@@ -128,8 +129,8 @@
       left: 0;
       position: absolute;
       right: 0;
-      top: calc(100% - 15px);
-      width: 100%;
+      top: calc(100% - 5px);
+      width: calc(100% + 30px);
       z-index: 1000;
     }
   }

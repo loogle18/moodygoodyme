@@ -1,0 +1,55 @@
+.form {
+  height: 100%;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: $secondary-grey;
+}
+.form-control::-moz-placeholder {
+  color: $secondary-grey;
+}
+.form-control:-ms-input-placeholder {
+  color: $secondary-grey;
+}
+.form-control:-moz-placeholder {
+  color: $secondary-grey;
+}
+
+.form-control.-input,
+.form-control.-textarea {
+  border: {
+    color: $primary-black;
+    radius: 0;
+    style: solid;
+    width: 0 0 1px 0;
+  }
+  box-shadow: none;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.form-control.-textarea {
+  height: 100%;
+  resize: none;
+}
+
+.link.-submit {
+  background: none;
+  border: 0;
+  box-shadow: none;
+  color: $primary-black;
+  outline: 0;
+  padding: 0 15px;
+}
+
+.form-group.-textarea {
+  height: calc(100% - 82px);
+}
+
+
+@media screen and (max-width: $screen-sm - 1) and (-webkit-min-device-pixel-ratio: 0) {
+
+  .form-control {
+    font-size: $default-content-font-size + 2;
+  }
+}
