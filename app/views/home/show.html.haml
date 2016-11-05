@@ -5,3 +5,10 @@
       .col-sm-8.side-block.-dark
 
       .col-sm-4.side-block.-light
+        .about-wrapper
+          .text.-small
+            = t('home.hello')
+          .text.-first
+            = t('home.about_first_part_html', books_path: contacts_path)
+          .text
+            = t('home.about_second_part_html')

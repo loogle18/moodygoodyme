@@ -1,5 +1,5 @@
-// For extra small screens
-@media (max-width: 414px) {
+// For small and extra small screens
+@media (max-width: $screen-sm - 1) {
 
   .ngn.ngn-error,
   .ngn.ngn-success {

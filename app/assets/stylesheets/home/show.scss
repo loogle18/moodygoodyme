@@ -1,3 +1,57 @@
 .home-page {
   height: 100%;
+
+  .side-block {
+    @extend %vertical-alignment-rule;
+  }
+
+  .photo {
+    width: 100%;
+  }
+
+  .about-wrapper {
+
+    .text:not(.-small) {
+      font-family: 'Playfair Display';
+      font-size: $default-content-font-size + 4;
+      font-weight: 600;
+    }
+
+    .text:not(.-grey) {
+      color: $primary-black;
+    }
+
+    .text.-first {
+      padding-bottom: 10px;
+    }
+
+    .text.-small {
+      font-size: $default-content-font-size - 3;
+      padding-bottom: 5px;
+      text-transform: uppercase;
+    }
+
+    .text.link {
+      cursor: pointer;
+    }
+
+    .text.-grey {
+      color: $secondary-grey;
+    }
+  }
+}
+
+
+// For extra small screens
+@media (max-width: 320px) {
+
+  .home-page {
+
+    .about-wrapper {
+
+      .text:not(.-small) {
+        font-size: $default-content-font-size;
+      }
+    }
+  }
 }

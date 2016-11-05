@@ -14,7 +14,7 @@
   }
 
   .link.-contacts {
-    color: $primary-grey;
+    color: $secondary-grey;
     font-size: $default-content-font-size + 6;
     padding: 10px 0;
     position: relative;
@@ -24,7 +24,7 @@
 
   .link.-contacts::before {
     @extend %custom-line-throw-rule;
-    background-color: $primary-grey;
+    background-color: $secondary-grey;
   }
 
   .link.-contacts:focus::before,

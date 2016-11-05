@@ -4,7 +4,7 @@
       = inline_svg 'icons/svg/app.svg', class: 'app-svg-icon'
     = link_to 'javascript:void(0);', 'aria-expanded' => 'false', 'data-target' => '#main-nav-list',
       'data-toggle' => 'collapse', class: 'pull-right navbar-toggle header-toggler' do
-      %span.sr-only Toggle navigation
+      %span.sr-only= t('layout.header.toggle_navigation')
       %span.icon-bar
       %span.icon-bar
       %span.icon-bar
@@ -13,6 +13,6 @@
       %ul.nav.navbar-nav
         %li.nav-item
         %li.nav-item
-          = link_to 'MY SHIT', root_path, class: 'link inline-block'
+          = link_to t('layout.header.my_shit'), root_path, class: 'link inline-block'
         %li.nav-item
-          = link_to 'CONTACTS', contacts_path, class: 'link inline-block'
+          = link_to t('layout.header.contacts'), contacts_path, class: 'link inline-block'

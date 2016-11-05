@@ -7,35 +7,20 @@
        asset-url('fonts/inconsolata-regular.woff') format('woff');
 }
 
-// open-sans-300
+// playfair-display-bold
 @font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Open Sans Light'),
-       asset-url('fonts/open-sans-latin-300.woff') format('woff'), /* Modern Browsers */
-       asset-url('fonts/open-sans-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
-       asset-url('fonts/open-sans-latin-300.svg#OpenSans') format('svg'); /* Legacy iOS */
-}
-
-// open-sans-regular
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'),
-       asset-url('fonts/open-sans-latin-regular.woff') format('woff'), /* Modern Browsers */
-       asset-url('fonts/open-sans-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       asset-url('fonts/open-sans-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
-}
-
-// open-sans-600
-@font-face {
-  font-family: 'Open Sans';
+  font-family: 'Playfair Display';
   font-style: normal;
   font-weight: 600;
-  src: local('Open Sans Semibold'),
-       asset-url('fonts/open-sans-latin-600.woff') format('woff'), /* Modern Browsers */
-       asset-url('fonts/open-sans-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
-       asset-url('fonts/open-sans-latin-600.svg#OpenSans') format('svg'); /* Legacy iOS */
+  src: local('Playfair Display'),
+       asset-url('fonts/playfair-display-bold.ttf') format('truetype')
+}
+
+// playfair-display-black
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Playfair Display'),
+       asset-url('fonts/playfair-display-black.ttf') format('truetype')
 }
