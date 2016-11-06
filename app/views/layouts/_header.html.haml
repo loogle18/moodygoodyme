@@ -1,4 +1,4 @@
-%nav.main-navbar.navbar.navbar-default{ class: nav_black_or_white_class }
+%nav.main-navbar.navbar.navbar-default{ class: navbar_class_modifier }
   .navbar-header
     = link_to root_path, class: 'navbar-brand' do
       = inline_svg 'icons/svg/app.svg', class: 'app-svg-icon'
@@ -13,6 +13,6 @@
       %ul.nav.navbar-nav
         %li.nav-item
         %li.nav-item
-          = link_to t('layout.header.my_shit'), root_path, class: 'link inline-block'
+          = link_to t('layout.header.my_shit'), books_path, class: 'link inline-block'
         %li.nav-item
           = link_to t('layout.header.contacts'), contacts_path, class: 'link inline-block'

@@ -30,6 +30,8 @@ en:
     hello: '- HELLO'
     about_first_part_html: "I'm <span class='text -grey'>Sviatoslav Medved'</span> a psychologist-dropout and an <span class='text -grey'>amateur writer</span> with several years/<a href='%{books_path}' class='link text'>books</a> of writing experience."
     about_second_part_html: "I’m based in <span class='text -grey'>Lviv</span> and currently working as <span class='text -grey'>Javascript/Ruby</span> developer at <a href='http://www.jetthoughts.com/' target='_blank' class='link text -grey'>JetThoughts</a>."
+  books:
+    description: 'Here are my completed works:'
   contacts:
     email: 'EMAIL'
     facebook: 'FACEBOOK'

@@ -1,5 +1,4 @@
 .home-page {
-  height: 100%;
 
   .side-block {
     @extend %vertical-alignment-rule;
@@ -42,15 +41,15 @@
 }
 
 
-// For extra small screens
-@media (max-width: 320px) {
+// For small and extra small screens
+@media (max-width: $screen-sm - 1) {
 
   .home-page {
 
     .about-wrapper {
 
       .text:not(.-small) {
-        font-size: $default-content-font-size;
+        font-size: $default-content-font-size + 2;
       }
     }
   }

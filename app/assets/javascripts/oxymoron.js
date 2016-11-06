@@ -182,6 +182,23 @@ angular.module("oxymoron.config.states", [])
           }
         })
       
+        .state('books_path', {
+          url: '/books',
+          
+          templateUrl: function(params) {
+            params['ng-view']='';
+            
+            
+            return Routes['books_path'](params);
+          },
+          controller: 'BooksCtrl as ctrl',
+          resolve: {
+            action: ['$stateParams', function ($stateParams) {
+              return resolve('index', $stateParams)
+            }]
+          }
+        })
+      
       return $stateProvider;
     }
   }])
@@ -517,7 +534,7 @@ angular.module("oxymoron.directives", ['oxymoron.directives.fileupload', 'oxymor
 (function () {
   var Routes = function () {
     var self = this,
-        routes = {"rails_info_properties":{"defaults":{},"path":"/rails/info/properties"},"rails_info_routes":{"defaults":{},"path":"/rails/info/routes"},"rails_info":{"defaults":{},"path":"/rails/info"},"rails_mailers":{"defaults":{},"path":"/rails/mailers"},"root":{"defaults":{},"path":"/"},"contacts":{"defaults":{},"path":"/contacts"}};
+        routes = {"rails_info_properties":{"defaults":{},"path":"/rails/info/properties"},"rails_info_routes":{"defaults":{},"path":"/rails/info/routes"},"rails_info":{"defaults":{},"path":"/rails/info"},"rails_mailers":{"defaults":{},"path":"/rails/mailers"},"root":{"defaults":{},"path":"/"},"contacts":{"defaults":{},"path":"/contacts"},"books":{"defaults":{},"path":"/books"}};
 
     self.defaultParams = {}
 

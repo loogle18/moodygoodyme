@@ -62,7 +62,7 @@
     }
   }
 
-  &.-black {
+  &.-home {
 
     .app-svg-icon path:not(.me-app-svg-path) {
       fill: $white-color;
@@ -87,7 +87,28 @@
     }
   }
 
-  &.-white {
+  &.-books {
+
+    .icon-bar {
+      background-color: $primary-black;
+    }
+
+    .nav-item .link {
+      color: $primary-black;
+    }
+
+    .nav-item .link::before {
+      background-color: $primary-black;
+    }
+
+    .nav-item .link:focus,
+    .nav-item .link:hover,
+    .nav-item .link:focus:hover {
+      color: $primary-black;
+    }
+  }
+
+  &.-contacts {
 
     .icon-bar {
       background-color: $primary-black;
@@ -135,11 +156,8 @@
     }
   }
 
-  .main-navbar.-black {
-
-    .main-nav-list {
-      background-color: $primary-black;
-    }
+  .main-navbar.-home {
+    @include gradient-vertical($primary-black, transparent, calc(100% - 5px), calc(100% - 5px));
 
     .nav-item .link {
       color: $white-color;
@@ -156,11 +174,12 @@
     }
   }
 
-  .main-navbar.-white {
+  .main-navbar.-books {
+    @include gradient-vertical($white-color, transparent, calc(100% - 5px), calc(100% - 5px));
+  }
 
-    .main-nav-list {
-      background-color: $white-color;
-    }
+  .main-navbar.-contacts {
+    @include gradient-vertical($white-color, transparent, calc(100% - 5px), calc(100% - 5px));
 
     .nav-item .link {
       color: $primary-black;

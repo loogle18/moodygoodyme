@@ -1,11 +1,11 @@
 = render partial: 'layouts/header'
-.main-content.contacts-page
+.main-content.contacts-page.full-height
   .container-fluid.full-height
     .row.full-height
       .col-sm-8.side-block.-light
         = render partial: 'form'
       .col-sm-4.side-block.-dark
-        .list-of-contacts
+        .list-of-contacts.full-height
           .links-group
             .link-wrapper
               = mail_to 'sviat.minato@gmail.com', t('contacts.email'),

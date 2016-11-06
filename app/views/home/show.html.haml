@@ -1,5 +1,5 @@
 = render partial: 'layouts/header'
-.main-content.home-page
+.main-content.home-page.full-height
   .container-fluid.full-height
     .row.full-height
       .col-sm-8.side-block.-dark
@@ -9,6 +9,6 @@
           .text.-small
             = t('home.hello')
           .text.-first
-            = t('home.about_first_part_html', books_path: contacts_path)
+            = t('home.about_first_part_html', books_path: books_path)
           .text
             = t('home.about_second_part_html')

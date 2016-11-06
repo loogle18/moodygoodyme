@@ -4,4 +4,6 @@ Rails.application.routes.draw do
 
   get 'contacts', to: 'contacts#new'
   post 'contacts', to: 'contacts#create'
+
+  resources :books, only: :index
 end

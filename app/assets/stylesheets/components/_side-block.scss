@@ -14,11 +14,11 @@
   .home-page {
 
     .side-block:first-of-type {
-      height: calc(100% - 240px);
+      height: calc(100% - 140px);
     }
 
     .side-block:last-of-type {
-      height: 240px;
+      height: 140px;
     }
   }
 
@@ -35,5 +35,20 @@
 
   .side-block:last-of-type {
     padding-top: initial;
+  }
+}
+
+// For small and extra small screens
+@media (max-width: 480px) {
+
+  .home-page {
+
+    .side-block:first-of-type {
+      height: calc(100% - 240px);
+    }
+
+    .side-block:last-of-type {
+      height: 240px;
+    }
   }
 }
