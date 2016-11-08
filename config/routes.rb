@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   post 'contacts', to: 'contacts#create'
 
   resources :books, only: :index
+
+  get 'books/download/:name', to: 'books#download', as: :books_download
 end

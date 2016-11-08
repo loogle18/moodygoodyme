@@ -7,13 +7,13 @@
           %span.text.-description
             = t('books.description')
           .book-block.inline-block
-            = link_to 'assets/books/god_hates_us_all.pdf', format: :pdf, target: '_target',
+            = link_to books_download_path('god_hates_us_all'), target: '_blank',
               class: 'link -book' do
               = image_tag 'god_hates_us_all.jpg', class: 'cover'
             .text.-name
               Бог Ненавидит Нас Всех
           .book-block.inline-block
-            = link_to 'assets/books/god_hates_us_all.pdf', format: :pdf, target: '_target',
+            = link_to books_download_path('god_hates_us_all'), target: '_blank',
               class: 'link -book' do
               = image_tag 'god_hates_us_all.jpg', class: 'cover'
             .text.-name
