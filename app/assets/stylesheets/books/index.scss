@@ -43,3 +43,23 @@
     padding-top: 10px;
   }
 }
+
+@media only screen and (max-height: 500px) {
+
+  .books-page {
+
+    .cover,
+    .link.-book {
+      margin: 0 auto;
+      width: 80px;
+    }
+
+    .link.-book:hover {
+      box-shadow: none;
+    }
+
+    .book-block {
+      text-align: center;
+    }
+  }
+}
